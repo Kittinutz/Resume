@@ -1,5 +1,71 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container-wide {
+    width: 92%;
+    margin: 0 auto;
+    max-width: 1005px;
+    transition: max-width .4s ease-out;
+    max-width: 1440px
+}
+.site-header .container-wide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    transition: height .4s ease-out
+}
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: #1A1F21
+}
+@media (min-width: 850px) {
+    .site-header .container-wide {
+        height: 70px
+    }
+}
+
+.text-gradient {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+}
+/*.table-date{*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*padding-top: 70;*/
+/*}*/
+@media (min-width: 850px) {
+    .site-header-panel {
+        width: 50%
+    }
+}
+.site-navigation {
+    text-align: center;
+    padding: 40px 0
+}
+
+.site-navigation a {
+    display: inline-block;
+    font-family: "stratum", "Arial Narrow", "Trebuchet MS", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    padding: 5px
 }
