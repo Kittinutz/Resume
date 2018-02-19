@@ -2,6 +2,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background-color: #252525;
+}
+.site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: #1A1F21
 }
 .container-wide {
     width: 92%;
@@ -19,19 +28,68 @@ body {
     transition: height .4s ease-out
 }
 
-.site-header {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background: #1A1F21
-}
+
 @media (min-width: 850px) {
     .site-header .container-wide {
         height: 70px
     }
+    .mobile-menu-trigger {
+        display: none !important;
+    }
+
 }
+.logo {
+    flex-grow: 1;
+}
+.logo a {
+    position: relative;
+    max-width: 150px;
+    width: 90%;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    transition: max-width .4s ease-out
+}
+.logo a img{
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+/******** START MOBILE MENU***********/
+.mobile-menu-trigger {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #43C6AC 0%, #5073B8 100%);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 13;
+    bottom: 15px;
+    right: 15px
+}
+.mobile-menu-trigger span {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background: white
+}
+.mobile-menu-trigger span + span {
+    margin-top: 4px
+}
+.mobile-menu-trigger:hover {
+    cursor: pointer
+}
+.menu-is-active .mobile-menu-trigger span {
+    background: #1A1F21
+}
+/********* END MOBILE MENU ************/
+
 
 .text-gradient {
     display: inline-block;
