@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #252525;
+    background-color: #fff;
 }
 .site-header {
     position: fixed;
@@ -35,6 +35,9 @@ body {
     }
     .mobile-menu-trigger {
         display: none !important;
+    }
+    .screen {
+        display: none !important
     }
 
 }
@@ -88,6 +91,22 @@ body {
 .menu-is-active .mobile-menu-trigger span {
     background: #1A1F21
 }
+/****SCREEN CLICK()***/
+.modal-screen, .screen {
+    display: inline;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    background: rgba(26, 31, 33, 0.96)
+}
+.modal-screen {
+    z-index: 11
+}
+
 /********* END MOBILE MENU ************/
 
 
