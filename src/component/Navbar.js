@@ -11,10 +11,19 @@ class Navbar extends Component {
                         </a>
                     </h1>
                     <div className="site-header-panel">
-                        <nav className="">
-                            <ul>
+                        <nav className="site-navigation">
+                            <ul className="site-navigation-list">
+                                <li className="mobile-only is-active">
+                                    <a href="">Home</a>
+
+                                </li>
                                 <li>
-                                    home
+                                    <a href="">PortFolio</a>
+
+                                </li>
+                                <li>
+                                    <a href="">My Skill</a>
+
                                 </li>
                             </ul>
                         </nav>
