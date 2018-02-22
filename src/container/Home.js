@@ -17,6 +17,22 @@ class Home extends Component {
         return (
             <div className={ !this.state.mobile?'home':'home menu-is-active'}>
                 <Navbar/>
+                <main className="main page-content fade-in">
+                    <header className="universe-intro universe in-view" data-detect-viewport>
+                        <div className="container text-white text-center">
+                            <div className="text-group universe-intro__content">
+                                <figure className="">
+                                    <h1>picture here</h1>
+                                </figure>
+
+                                <div>
+                                    <p>Profile here</p>
+                                    <p>Profile here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </main>
                 <span class="screen" style={{display:!this.state.mobile?'none':'inline'}}></span>
                 <div className="mobile-menu-trigger">
                     <div onClick={this.handleClickmenuMobil}>

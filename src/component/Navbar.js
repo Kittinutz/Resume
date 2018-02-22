@@ -23,7 +23,6 @@ class Navbar extends Component {
                                 </li>
                                 <li>
                                     <a href="">My Skill</a>
-
                                 </li>
                             </ul>
                         </nav>
