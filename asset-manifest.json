@@ -1,7 +1,11 @@
 {
-  "main.css": "static/css/main.e578c3af.css",
-  "main.css.map": "static/css/main.e578c3af.css.map",
-  "main.js": "static/js/main.4bc5de25.js",
-  "main.js.map": "static/js/main.4bc5de25.js.map",
-  "static/media/Kittinutlogo.png": "static/media/Kittinutlogo.5e8b3c0d.png"
+  "main.css": "static/css/main.6b71ceaf.css",
+  "main.css.map": "static/css/main.6b71ceaf.css.map",
+  "main.js": "static/js/main.f468b660.js",
+  "main.js.map": "static/js/main.f468b660.js.map",
+  "static/media/Kittinutlogo.png": "static/media/Kittinutlogo.5e8b3c0d.png",
+  "static/media/picture.png": "static/media/picture.5b6e7d10.png",
+  "static/media/piture-withe.png": "static/media/piture-withe.bb0388f4.png",
+  "static/media/stars-lg.svg": "static/media/stars-lg.8e79bb50.svg",
+  "static/media/stars-sm.svg": "static/media/stars-sm.0e454a16.svg"
 }
