@@ -4,6 +4,7 @@ import picture from '../assets/picture.png'
 import picturewithe from '../assets/piture-withe.png'
 import '../App.css';
 import '../assets/circle.scss'
+import Hardskill from '../component/Hardskill';
 
 class Home extends Component {
     constructor(props) {
@@ -30,7 +31,7 @@ class Home extends Component {
     handleScroll = (event) => {
         let scrollTop = window.scrollY;
         if (scrollTop > 0) {
-
+            this.setState({topelement: true})
         }
         console.log(scrollTop);
     };
@@ -69,36 +70,18 @@ class Home extends Component {
                     </header>
                 </main>
                 <span className="screen" style={{display: !this.state.mobile ? 'none' : 'inline'}}></span>
-                <div className="skillchartinfo">
-                    <figure class="chart-one animate">
-                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
-                        <title>[title here]</title>
-                        <desc>[long description here]</desc>
-                        <circle class="circle-background"/>
-                        <circle class="circle-foreground"/>
-                    </svg>
-                    <figcaption>25% of all males like donuts.</figcaption>
-                </figure>
-
-                <figure class="chart-two animate">
-                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
-                        <title>[title here]</title>
-                        <desc>[long description here]</desc>
-                        <circle class="circle-background"/>
-                        <circle class="circle-foreground"/>
-                    </svg>
-                    <figcaption>50% of all males like donuts.</figcaption>
-                </figure>
-
-                <figure class="chart-three animate">
-                    <svg role="img" xmlns="http://www.w3.org/2000/svg">
-                        <title>[title here]</title>
-                        <desc>[long description here]</desc>
-                        <circle class="circle-background"/>
-                        <circle class="circle-foreground"/>
-                    </svg>
-                    <figcaption>75% of all males like donuts.</figcaption>
-                </figure>
+                <div className="headerskill">
+                    <div className="skillchartinfo-header">
+                        <h1>~Hard Skill~</h1>
+                    </div>
+                    <div className="skillchartinfo animated fadeIn">
+                        <Hardskill name="Javascript" css="chart-javascript"/>
+                        <Hardskill name="HTML5" css="chart-html"/>
+                        <Hardskill name="CSS3" css="chart-css3"/>
+                        <Hardskill name="PHP" css="chart-php"/>
+                        <Hardskill name="JAVA" css="chart-java"/>
+                        <Hardskill name="C#" css="char-cshape"/>
+                    </div>
                 </div>
 
                 <div className="mobile-menu-trigger">
