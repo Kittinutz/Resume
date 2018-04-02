@@ -1,12 +1,18 @@
 {
-  "main.css": "static/css/main.7ca707b0.css",
-  "main.css.map": "static/css/main.7ca707b0.css.map",
-  "main.js": "static/js/main.a8b67347.js",
-  "main.js.map": "static/js/main.a8b67347.js.map",
+  "main.css": "static/css/main.8bc0b365.css",
+  "main.css.map": "static/css/main.8bc0b365.css.map",
+  "main.js": "static/js/main.34b8354b.js",
+  "main.js.map": "static/js/main.34b8354b.js.map",
   "static/media/Kittinutlogo.png": "static/media/Kittinutlogo.5e8b3c0d.png",
   "static/media/circle.scss": "static/media/circle.e4a54e6a.scss",
+  "static/media/css3.png": "static/media/css3.fbe01551.png",
+  "static/media/github.png": "static/media/github.c28b7341.png",
+  "static/media/html5.png": "static/media/html5.664a8c00.png",
+  "static/media/laravel.png": "static/media/laravel.8a613b5f.png",
+  "static/media/nodejs.png": "static/media/nodejs.9376002c.png",
   "static/media/picture.png": "static/media/picture.5b6e7d10.png",
   "static/media/piture-withe.png": "static/media/piture-withe.bb0388f4.png",
+  "static/media/react.png": "static/media/react.5acae484.png",
   "static/media/stars-lg.svg": "static/media/stars-lg.8e79bb50.svg",
   "static/media/stars-sm.svg": "static/media/stars-sm.0e454a16.svg"
 }
