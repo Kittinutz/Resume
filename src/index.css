@@ -1155,7 +1155,7 @@ figcaption {
     justify-content: center;
     align-content: space-between;
     flex-wrap: wrap;
-    padding: 0 0 30% 0;
+    padding: 0 0 5% 0;
 
 }
 .skillchartinfo-header{
@@ -1187,4 +1187,23 @@ figcaption {
 .headerskill{
     background-color: white;
     z-index: 2;
+    color: #252525;
+}
+.logo-group{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+
+}
+.logo-group img{
+    width: 20%;
+    height: 20%;
+}
+.experience-school{
+    padding: 5% 5%;
 }
