@@ -16,7 +16,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1
+    z-index: -1;
 }
 * {
     margin: 0;
@@ -420,6 +420,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .content-info{
     background-color: #ffffff;
     display: flex;
+    z-index: 1;
 
 }
 /**********SKILL*************/
@@ -511,8 +512,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     animation-delay: 1s;
 }
 .chart-two.animate figcaption:after {
-    -webkit-animation: chart-two-label 3s steps(50) forwards;
-    animation: chart-two-label 3s steps(50) forwards;
+    -webkit-animation: chart-two-label 3s steps(75) forwards;
+    animation: chart-two-label 3s steps(75) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
@@ -521,7 +522,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     height: 100%;
 }
 .chart-two svg .circle-background, .chart-two svg .circle-foreground {
-    r: 92.5px;
+    r: 87.5px;
     cx: 50%;
     cy: 50%;
     fill: none;
@@ -530,8 +531,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .chart-two svg .circle-foreground {
     stroke: #d0f09e;
-    stroke-dasharray: 290.45px 580.9px;
-    stroke-dashoffset: 290.45px;
+    stroke-dasharray: 412.125px 549.5px;
+    stroke-dashoffset: 412.125px;
     stroke-linecap: round;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
@@ -560,49 +561,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @-webkit-keyframes chart-two-label {
     100% {
-        -webkit-transform: translateY(-125rem);
-        transform: translateY(-125rem);
+        -webkit-transform: translateY(-187.5rem);
+        transform: translateY(-187.5rem);
     }
 }
 
 @keyframes chart-two-label {
     100% {
-        -webkit-transform: translateY(-125rem);
-        transform: translateY(-125rem);
+        -webkit-transform: translateY(-187.5rem);
+        transform: translateY(-187.5rem);
     }
 }
-.chart-three {
+/******JAVASCRIPT********/
+.chart-javascript {
     width: 200px;
     height: 200px;
     margin: 0;
     position: relative;
 }
-.chart-three.animate svg .circle-foreground {
+.chart-javascript.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
-.chart-three.animate figcaption:after {
-    -webkit-animation: chart-three-label 3s steps(75) forwards;
-    animation: chart-three-label 3s steps(75) forwards;
+.chart-javascript.animate figcaption:after {
+    -webkit-animation: chart-javascript-label 3s steps(75) forwards;
+    animation: chart-javascript-label 3s steps(75) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
-.chart-three svg {
+.chart-javascript svg {
     width: 100%;
     height: 100%;
 }
-.chart-three svg .circle-background, .chart-three svg .circle-foreground {
+.chart-javascript svg .circle-background, .chart-javascript svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
     cy: 50%;
     fill: none;
-    stroke: #305556;
+    stroke: #178832;
     stroke-width: 25px;
 }
-.chart-three svg .circle-foreground {
-    stroke: #389967;
+.chart-javascript svg .circle-foreground {
+    stroke: #5fa958;
     stroke-dasharray: 412.125px 549.5px;
     stroke-dashoffset: 412.125px;
     stroke-linecap: round;
@@ -611,19 +613,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
-.chart-three figcaption {
+.chart-javascript figcaption {
     display: inline-block;
     width: 100%;
     height: 2.5rem;
     overflow: hidden;
     text-align: center;
-    color: #c6e8d7;
+    color:  #c6e8d7;
     position: absolute;
     top: calc(50% - 1.25rem);
     left: 0;
     font-size: 0;
 }
-.chart-three figcaption:after {
+.chart-javascript figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
     white-space: pre;
@@ -631,14 +633,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     line-height: 2.5rem;
 }
 
-@-webkit-keyframes chart-three-label {
+@-webkit-keyframes chart-javascript-label {
     100% {
         -webkit-transform: translateY(-187.5rem);
         transform: translateY(-187.5rem);
     }
 }
 
-@keyframes chart-three-label {
+@keyframes chart-javascript-label {
     100% {
         -webkit-transform: translateY(-187.5rem);
         transform: translateY(-187.5rem);
@@ -664,8 +666,525 @@ figure {
 figcaption {
     font-family: "Abel", sans-serif;
 }
+/******JAVASCRIPT********/
+/******HTML********/
+.chart-html {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+}
+.chart-html.animate svg .circle-foreground {
+    -webkit-animation: offset 3s ease-in-out forwards;
+    animation: offset 3s ease-in-out forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-html.animate figcaption:after {
+    -webkit-animation: chart-html-label 3s steps(80) forwards;
+    animation: chart-html-label 3s steps(80) forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-html svg {
+    width: 100%;
+    height: 100%;
+}
+.chart-html svg .circle-background, .chart-html svg .circle-foreground {
+    r: 87.5px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #f43b02;
+    stroke-width: 25px;
+}
+.chart-html svg .circle-foreground {
+    stroke: #ff7a00;
+    stroke-dasharray: 449.6px 549.5px;
+    stroke-dashoffset: 449.6px;
+    stroke-linecap: round;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.chart-html figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    text-align: center;
+    color: #ff7a00;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 0;
+    font-size: 0;
+}
+.chart-html figcaption:after {
+    display: inline-block;
+    content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+    white-space: pre;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+@-webkit-keyframes chart-html-label {
+    100% {
+        -webkit-transform: translateY(-200rem);
+        transform: translateY(-200rem);
+    }
+}
+
+@keyframes chart-html-label {
+    100% {
+        -webkit-transform: translateY(-200rem);
+        transform: translateY(-200rem);
+    }
+}
+@-webkit-keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* codepen styling only */
+
+
+figure {
+    margin: 1rem !important;
+}
+
+figcaption {
+    font-family: "Abel", sans-serif;
+}
+/*******HTML*********/
+/******CSS3*********/
+
+.chart-css3 {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+}
+.chart-css3.animate svg .circle-foreground {
+    -webkit-animation: offset 3s ease-in-out forwards;
+    animation: offset 3s ease-in-out forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-css3.animate figcaption:after {
+    -webkit-animation: chart-css3-label 3s steps(50) forwards;
+    animation: chart-css3-label 3s steps(50) forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-css3 svg {
+    width: 100%;
+    height: 100%;
+}
+.chart-css3 svg .circle-background, .chart-css3 svg .circle-foreground {
+    r: 87.5px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #0074be;
+    stroke-width: 25px;
+}
+.chart-css3 svg .circle-foreground {
+    stroke: #00abe1;
+    stroke-dasharray: 268.75px 549.5px;
+    stroke-dashoffset: 268.75px;
+    stroke-linecap: round;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.chart-css3 figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    text-align: center;
+    color: #00abe1;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 0;
+    font-size: 0;
+}
+.chart-css3 figcaption:after {
+    display: inline-block;
+    content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+    white-space: pre;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+@-webkit-keyframes chart-css3-label {
+    100% {
+        -webkit-transform: translateY(-125rem);
+        transform: translateY(-125rem);
+    }
+}
+
+@keyframes chart-css3-label {
+    100% {
+        -webkit-transform: translateY(-125rem);
+        transform: translateY(-125rem);
+    }
+}
+@-webkit-keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* codepen styling only */
+
+
+figure {
+    margin: 1rem !important;
+}
+
+figcaption {
+    font-family: "Abel", sans-serif;
+}
+
+/******CSS3*********/
+/******PHP*********/
+
+.chart-php {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+}
+.chart-php.animate svg .circle-foreground {
+    -webkit-animation: offset 3s ease-in-out forwards;
+    animation: offset 3s ease-in-out forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-php.animate figcaption:after {
+    -webkit-animation: chart-php-label 3s steps(60) forwards;
+    animation: chart-php-label 3s steps(60) forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-php svg {
+    width: 100%;
+    height: 100%;
+}
+.chart-php svg .circle-background, .chart-php svg .circle-foreground {
+    r: 87.5px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #45089d;
+    stroke-width: 25px;
+}
+.chart-php svg .circle-foreground {
+    stroke: #5e33a5;
+    stroke-dasharray: 329.125px 549.5px;
+    stroke-dashoffset: 329.125px;
+    stroke-linecap: round;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.chart-php figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    text-align: center;
+    color: #5e33a5;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 0;
+    font-size: 0;
+}
+.chart-php figcaption:after {
+    display: inline-block;
+    content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+    white-space: pre;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+@-webkit-keyframes chart-php-label {
+    100% {
+        -webkit-transform: translateY(-150rem);
+        transform: translateY(-150rem);
+    }
+}
+
+@keyframes chart-php-label {
+    100% {
+        -webkit-transform: translateY(-150rem);
+        transform: translateY(-150rem);
+    }
+}
+@-webkit-keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* codepen styling only */
+
+
+figure {
+    margin: 1rem !important;
+}
+
+figcaption {
+    font-family: "Abel", sans-serif;
+}
+
+/******PHP*********/
+/******JAVA*********/
+
+.chart-java {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+}
+.chart-java.animate svg .circle-foreground {
+    -webkit-animation: offset 3s ease-in-out forwards;
+    animation: offset 3s ease-in-out forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-java.animate figcaption:after {
+    -webkit-animation: chart-java-label 3s steps(38) forwards;
+    animation: chart-java-label 3s steps(38) forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.chart-java svg {
+    width: 100%;
+    height: 100%;
+}
+.chart-java svg .circle-background, .chart-java svg .circle-foreground {
+    r: 87.5px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #efefef;
+    stroke-width: 25px;
+}
+.chart-java svg .circle-foreground {
+    stroke: #ff7000;
+    stroke-dasharray: 208.81px 549.5px;
+    stroke-dashoffset: 208.81px;
+    stroke-linecap: round;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.chart-java figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    text-align: center;
+    color: #ff7000;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 0;
+    font-size: 0;
+}
+.chart-java figcaption:after {
+    display: inline-block;
+    content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+    white-space: pre;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+@-webkit-keyframes chart-java-label {
+    100% {
+        -webkit-transform: translateY(-95rem);
+        transform: translateY(-95rem);
+    }
+}
+
+@keyframes chart-java-label {
+    100% {
+        -webkit-transform: translateY(-95rem);
+        transform: translateY(-95rem);
+    }
+}
+@-webkit-keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* codepen styling only */
+
+
+figure {
+    margin: 1rem !important;
+}
+
+figcaption {
+    font-family: "Abel", sans-serif;
+}
+
+/******JAVA*********/
+/******C#*********/
+
+.char-cshape {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+}
+.char-cshape.animate svg .circle-foreground {
+    -webkit-animation: offset 3s ease-in-out forwards;
+    animation: offset 3s ease-in-out forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.char-cshape.animate figcaption:after {
+    -webkit-animation: char-cshape-label 3s steps(38) forwards;
+    animation: char-cshape-label 3s steps(38) forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.char-cshape svg {
+    width: 100%;
+    height: 100%;
+}
+.char-cshape svg .circle-background, .char-cshape svg .circle-foreground {
+    r: 87.5px;
+    cx: 50%;
+    cy: 50%;
+    fill: none;
+    stroke: #efefef;
+    stroke-width: 25px;
+}
+.char-cshape svg .circle-foreground {
+    stroke: #ab00e8;
+    stroke-dasharray: 208.81px 549.5px;
+    stroke-dashoffset: 208.81px;
+    stroke-linecap: round;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.char-cshape figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    text-align: center;
+    color: #ab00e8;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 0;
+    font-size: 0;
+}
+.char-cshape figcaption:after {
+    display: inline-block;
+    content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+    white-space: pre;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+@-webkit-keyframes char-cshape-label {
+    100% {
+        -webkit-transform: translateY(-95rem);
+        transform: translateY(-95rem);
+    }
+}
+
+@keyframes char-cshape-label {
+    100% {
+        -webkit-transform: translateY(-95rem);
+        transform: translateY(-95rem);
+    }
+}
+@-webkit-keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* codepen styling only */
+
+
+figure {
+    margin: 1rem !important;
+}
+
+figcaption {
+    font-family: "Abel", sans-serif;
+}
+
+/******C#*********/
 .skillchartinfo {
     display: flex;
     justify-content: center;
-    align-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0 30% 0;
+
+}
+.skillchartinfo-header{
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    padding: 5% 5%;
+}
+.single-chart{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.single-chart h1 {
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-block;
+    background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.headerskill{
+    background-color: white;
+    z-index: 2;
 }
