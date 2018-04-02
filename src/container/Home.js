@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import Navbar from '../component/Navbar';
 import picture from '../assets/picture.png'
+import react from  '../assets/react.png'
+import html5 from '../assets/html5.png'
+import github from '../assets/github.png'
+import laravel from '../assets/laravel.png'
+import nodejs from '../assets/nodejs.png'
+import stack from '../assets/stack.png'
+import css3 from '../assets/css3.png'
 import picturewithe from '../assets/piture-withe.png'
 import '../App.css';
 import '../assets/circle.scss'
@@ -82,8 +89,19 @@ class Home extends Component {
                         <Hardskill name="JAVA" css="chart-java"/>
                         <Hardskill name="C#" css="char-cshape"/>
                     </div>
+                    <div className="logo-group">
+                        <img src={nodejs} alt="nodejs"/>
+                        <img src={react} alt="react"/>
+                        <img src={github} alt="github"/>
+                        <img src={laravel} alt="laravel"/>
+                        <img src={stack} alt="stack"/>
+                        <img src={html5} alt="stack"/>
+                        <img src={css3} alt="stack"/>
+                    </div>
                 </div>
+                <div className="experience-school">
 
+                </div>
                 <div className="mobile-menu-trigger">
                     <div onClick={this.handleClickmenuMobil}>
                         <span></span>
