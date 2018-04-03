@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73e86b32-f781-48b8-a070-9c01448b02f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/container/Home.js" afterPath="$PROJECT_DIR$/src/container/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,8 +72,8 @@
           <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/container/Home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="537">
-                  <caret line="101" column="49" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="49" />
+                <state relative-caret-position="434">
+                  <caret line="96" column="54" lean-forward="false" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -228,8 +226,8 @@
         <option value="$PROJECT_DIR$/src/component/HardSkill.js" />
         <option value="$PROJECT_DIR$/src/component/Hardskill.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/container/Home.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/container/Home.js" />
       </list>
     </option>
   </component>
@@ -370,12 +368,12 @@
       <workItem from="1519267766940" duration="5274000" />
       <workItem from="1519544776021" duration="856000" />
       <workItem from="1522590337425" duration="2119000" />
-      <workItem from="1522595709021" duration="22164000" />
+      <workItem from="1522595709021" duration="22665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50626000" />
+    <option name="totallyTimeSpent" value="51127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -718,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/universe-index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3164">
-          <caret line="369" column="28" lean-forward="false" selection-start-line="369" selection-start-column="26" selection-end-line="369" selection-end-column="28" />
+        <state relative-caret-position="279">
+          <caret line="974" column="0" lean-forward="false" selection-start-line="974" selection-start-column="0" selection-end-line="976" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -818,21 +816,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="101" column="49" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="1207" column="18" lean-forward="false" selection-start-line="1207" selection-start-column="18" selection-end-line="1207" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="96" column="54" lean-forward="false" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

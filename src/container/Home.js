@@ -95,8 +95,6 @@ class Home extends Component {
                         <img src={github} alt="github"/>
                         <img src={laravel} alt="laravel"/>
                         <img src={stack} alt="stack"/>
-                        <img src={html5} alt="stack"/>
-                        <img src={css3} alt="stack"/>
                     </div>
                 </div>
                 <div className="experience-school">
