@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '~antd/dist/antd.css';
 body {
     padding-top: 60px;
-    font-family: "Monaco" ,sans-serif;
-    background-color: #1A1F21;
+    font-family: "Monaco", sans-serif;
+    background-color: #1A1F21 !important;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, audio, canvas, video, svg {
     display: block
 }
@@ -18,17 +20,21 @@ body:before {
     left: 0;
     z-index: -1;
 }
+
 * {
     margin: 0;
     padding: 0;
     border: 0
 }
+
 ol, ul {
     list-style: none
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, audio, canvas, video, svg {
     display: block
 }
+
 .site-header {
     position: fixed;
     width: 100%;
@@ -37,15 +43,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 0;
     background: #000000;
 }
+
 *, *:before, *:after {
     box-sizing: border-box
 }
+
 .p a, p a {
     text-decoration: underline
 }
+
 .p + .btn, .p + .icon-link, p + .btn, p + .icon-link {
     margin-top: 30px
 }
+
 @media (max-width: 599px) {
     .p, p {
         font-size: 1.5rem
@@ -64,7 +74,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     }
 }
 
-
 .container-wide {
     width: 92%;
     margin: 0 auto;
@@ -72,6 +81,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transition: max-width .4s ease-out;
     max-width: 1440px
 }
+
 .site-header .container-wide {
     display: flex;
     align-items: center;
@@ -85,6 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
     padding: 40px 0
 }
+
 .site-navigation a {
     display: inline-block;
     font-family: "Roboto", sans-serif;
@@ -97,6 +108,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     position: relative;
     padding: 5px
 }
+
 .site-navigation a:after {
     content: '';
     display: block;
@@ -112,6 +124,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: scaleX(0);
     transition: transform .4s ease-out
 }
+
 .site-navigation li.is-active a:after, .site-navigation a:hover:after {
     transform: scaleX(1)
 }
@@ -120,15 +133,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .site-header-panel {
         width: 50%
     }
+
     .site-header .container-wide {
         height: 70px
     }
+
     .mobile-menu-trigger {
         display: none !important;
     }
+
     .screen {
         display: none !important
     }
+
     .site-navigation {
         display: flex;
         justify-content: flex-end;
@@ -147,17 +164,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .site-navigation ul li {
         flex-grow: 1
     }
+
     .site-navigation a {
         font-size: 1.2rem
     }
+
     .site-navigation a {
         font-size: 1.2rem
     }
+
     .site-header .mobile-only {
         display: none
     }
 
 }
+
 @media (max-width: 849px) {
     .site-navigation {
         position: fixed;
@@ -190,16 +211,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .site-header-panel {
         width: 50%
     }
+
     .site-navigation ul {
         max-width: 640px
     }
-    .site-navigation a{
+
+    .site-navigation a {
         text-decoration: none;
     }
 }
+
 .logo {
     flex-grow: 1;
 }
+
 .logo a {
     position: relative;
     max-width: 150px;
@@ -210,11 +235,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: normal;
     transition: max-width .4s ease-out
 }
-.logo a img{
+
+.logo a img {
     width: 100%;
     padding-top: 10px;
 
 }
+
 .universe-intro {
     position: relative;
     display: flex;
@@ -224,29 +251,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     z-index: 2;
     padding: 60px 0 150px
 }
+
 .universe-intro:before {
     opacity: 0.2
 }
+
 .universe {
     background: #22292C;
     overflow: hidden;
     position: relative;
     z-index: 2
 }
+
 .universe-logo-wrap {
     position: relative;
     margin: 0 auto 50px
 }
+
 .universe-logo-wrap.in-view .universe-logo-white {
     animation: fadeLogo 2s ease 0.8s 1 backwards;
     opacity: 0;
     z-index: -1;
 }
 
-
 .page-loaded .fade-in, .page-loaded.fade-in {
     opacity: 1
 }
+
 [data-animate-in="up"] {
     transform: translate3d(0, 24px, 0)
 }
@@ -279,6 +310,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0;
     transition: opacity 0.8s ease
 }
+
 @keyframes fadeLogo {
     0% {
         opacity: 1;
@@ -293,19 +325,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         z-index: -1
     }
 }
+
 .universe-logo {
     max-width: 50%;
     width: 90%
 }
+
 .container {
     width: 92%;
     margin: 0 auto;
     max-width: 1005px;
     transition: max-width .4s ease-out
 }
+
 .text-center {
     text-align: center
 }
+
 /******** START MOBILE MENU***********/
 .mobile-menu-trigger {
     width: 55px;
@@ -322,21 +358,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     bottom: 15px;
     right: 15px
 }
+
 .mobile-menu-trigger span {
     width: 25px;
     height: 2px;
     display: block;
     background: white
 }
+
 .mobile-menu-trigger span + span {
     margin-top: 4px
 }
+
 .mobile-menu-trigger:hover {
     cursor: pointer
 }
+
 .menu-is-active .mobile-menu-trigger span {
     background: #1A1F21
 }
+
 .menu-is-active .site-navigation {
     transform: scale(1)
 }
@@ -378,12 +419,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 1;
     background: rgba(26, 31, 33, 0.96)
 }
+
 .modal-screen {
     z-index: 11
 }
 
 /********* END MOBILE MENU ************/
-
 
 .text-gradient {
     display: inline-block;
@@ -414,15 +455,79 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: url("./assets/stars-lg.svg") center/1100px auto repeat;
     animation: 10s pulse infinite linear
 }
-.text-white{
+.shooting-star {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform: rotate(30deg);
+    pointer-events: none
+}
+
+.shooting-star img {
+    opacity: 0;
+    animation-delay: 0;
+    animation: shooting-star 6s infinite ease-out
+}
+
+.shooting-star-right {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width: 130px;
+    transform: rotate(-235deg);
+    pointer-events: none
+}
+
+.shooting-star-right img {
+    opacity: 0;
+    animation: shooting-star 6s 3s infinite ease-out;
+    animation-delay: 2.5s
+}
+@keyframes shooting-star {
+    0% {
+        opacity: 1;
+        transform: scale(0) translate3d(0, 0, 0)
+    }
+    15% {
+        opacity: 1
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1) translate3d(180px, 0, 0)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) translate3d(180px, 0, 0)
+    }
+}
+@keyframes rotate360 {
+    to{
+        transform: rotateZ(360deg);
+    }
+    
+}
+@keyframes pulse {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+.text-white {
     color: #ffffff;
 }
-.content-info{
+
+.content-info {
     background-color: #ffffff;
     display: flex;
     z-index: 1;
 
 }
+
 /**********SKILL*************/
 /* ------- DO NOT EDIT BELOW --------- */
 @import url(https://fonts.googleapis.com/css?family=Abel);
@@ -432,22 +537,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 0;
     position: relative;
 }
+
 .chart-one.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-one.animate figcaption:after {
     -webkit-animation: chart-one-label 3s steps(32) forwards;
     animation: chart-one-label 3s steps(32) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-one svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-one svg .circle-background, .chart-one svg .circle-foreground {
     r: 99.5px;
     cx: 50%;
@@ -456,6 +565,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     stroke: #305556;
     stroke-width: 1px;
 }
+
 .chart-one svg .circle-foreground {
     stroke: #79be9b;
     stroke-dasharray: 199.9552px 624.86px;
@@ -466,6 +576,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-one figcaption {
     display: inline-block;
     width: 100%;
@@ -478,6 +589,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 0;
     font-size: 0;
 }
+
 .chart-one figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -499,28 +611,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         transform: translateY(-80rem);
     }
 }
+
 .chart-two {
     width: 200px;
     height: 200px;
     margin: 0;
     position: relative;
 }
+
 .chart-two.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-two.animate figcaption:after {
     -webkit-animation: chart-two-label 3s steps(75) forwards;
     animation: chart-two-label 3s steps(75) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-two svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-two svg .circle-background, .chart-two svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -529,6 +646,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     stroke: #305556;
     stroke-width: 15px;
 }
+
 .chart-two svg .circle-foreground {
     stroke: #d0f09e;
     stroke-dasharray: 412.125px 549.5px;
@@ -539,6 +657,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-two figcaption {
     display: inline-block;
     width: 100%;
@@ -551,6 +670,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 0;
     font-size: 0;
 }
+
 .chart-two figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -572,6 +692,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         transform: translateY(-187.5rem);
     }
 }
+
 /******JAVASCRIPT********/
 .chart-javascript {
     width: 200px;
@@ -579,22 +700,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 0;
     position: relative;
 }
+
 .chart-javascript.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-javascript.animate figcaption:after {
     -webkit-animation: chart-javascript-label 3s steps(75) forwards;
     animation: chart-javascript-label 3s steps(75) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-javascript svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-javascript svg .circle-background, .chart-javascript svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -603,6 +728,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     stroke: #178832;
     stroke-width: 25px;
 }
+
 .chart-javascript svg .circle-foreground {
     stroke: #5fa958;
     stroke-dasharray: 412.125px 549.5px;
@@ -613,18 +739,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-javascript figcaption {
     display: inline-block;
     width: 100%;
     height: 2.5rem;
     overflow: hidden;
     text-align: center;
-    color:  #c6e8d7;
+    color: #c6e8d7;
     position: absolute;
     top: calc(50% - 1.25rem);
     left: 0;
     font-size: 0;
 }
+
 .chart-javascript figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -646,18 +774,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         transform: translateY(-187.5rem);
     }
 }
+
 @-webkit-keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
-/* codepen styling only */
 
+/* codepen styling only */
 
 figure {
     margin: 1rem !important;
@@ -666,6 +796,7 @@ figure {
 figcaption {
     font-family: "Abel", sans-serif;
 }
+
 /******JAVASCRIPT********/
 /******HTML********/
 .chart-html {
@@ -674,22 +805,26 @@ figcaption {
     margin: 0;
     position: relative;
 }
+
 .chart-html.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-html.animate figcaption:after {
     -webkit-animation: chart-html-label 3s steps(80) forwards;
     animation: chart-html-label 3s steps(80) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-html svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-html svg .circle-background, .chart-html svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -698,6 +833,7 @@ figcaption {
     stroke: #f43b02;
     stroke-width: 25px;
 }
+
 .chart-html svg .circle-foreground {
     stroke: #ff7a00;
     stroke-dasharray: 449.6px 549.5px;
@@ -708,6 +844,7 @@ figcaption {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-html figcaption {
     display: inline-block;
     width: 100%;
@@ -720,6 +857,7 @@ figcaption {
     left: 0;
     font-size: 0;
 }
+
 .chart-html figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -741,18 +879,20 @@ figcaption {
         transform: translateY(-200rem);
     }
 }
+
 @-webkit-keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
-/* codepen styling only */
 
+/* codepen styling only */
 
 figure {
     margin: 1rem !important;
@@ -761,6 +901,7 @@ figure {
 figcaption {
     font-family: "Abel", sans-serif;
 }
+
 /*******HTML*********/
 /******CSS3*********/
 
@@ -770,22 +911,26 @@ figcaption {
     margin: 0;
     position: relative;
 }
+
 .chart-css3.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-css3.animate figcaption:after {
     -webkit-animation: chart-css3-label 3s steps(50) forwards;
     animation: chart-css3-label 3s steps(50) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-css3 svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-css3 svg .circle-background, .chart-css3 svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -794,6 +939,7 @@ figcaption {
     stroke: #0074be;
     stroke-width: 25px;
 }
+
 .chart-css3 svg .circle-foreground {
     stroke: #00abe1;
     stroke-dasharray: 268.75px 549.5px;
@@ -804,6 +950,7 @@ figcaption {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-css3 figcaption {
     display: inline-block;
     width: 100%;
@@ -816,6 +963,7 @@ figcaption {
     left: 0;
     font-size: 0;
 }
+
 .chart-css3 figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -837,18 +985,20 @@ figcaption {
         transform: translateY(-125rem);
     }
 }
+
 @-webkit-keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
-/* codepen styling only */
 
+/* codepen styling only */
 
 figure {
     margin: 1rem !important;
@@ -867,22 +1017,26 @@ figcaption {
     margin: 0;
     position: relative;
 }
+
 .chart-php.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-php.animate figcaption:after {
     -webkit-animation: chart-php-label 3s steps(60) forwards;
     animation: chart-php-label 3s steps(60) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-php svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-php svg .circle-background, .chart-php svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -891,6 +1045,7 @@ figcaption {
     stroke: #45089d;
     stroke-width: 25px;
 }
+
 .chart-php svg .circle-foreground {
     stroke: #5e33a5;
     stroke-dasharray: 329.125px 549.5px;
@@ -901,6 +1056,7 @@ figcaption {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-php figcaption {
     display: inline-block;
     width: 100%;
@@ -913,6 +1069,7 @@ figcaption {
     left: 0;
     font-size: 0;
 }
+
 .chart-php figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -934,18 +1091,20 @@ figcaption {
         transform: translateY(-150rem);
     }
 }
+
 @-webkit-keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
-/* codepen styling only */
 
+/* codepen styling only */
 
 figure {
     margin: 1rem !important;
@@ -964,22 +1123,26 @@ figcaption {
     margin: 0;
     position: relative;
 }
+
 .chart-java.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-java.animate figcaption:after {
     -webkit-animation: chart-java-label 3s steps(38) forwards;
     animation: chart-java-label 3s steps(38) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .chart-java svg {
     width: 100%;
     height: 100%;
 }
+
 .chart-java svg .circle-background, .chart-java svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -988,6 +1151,7 @@ figcaption {
     stroke: #efefef;
     stroke-width: 25px;
 }
+
 .chart-java svg .circle-foreground {
     stroke: #ff7000;
     stroke-dasharray: 208.81px 549.5px;
@@ -998,6 +1162,7 @@ figcaption {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .chart-java figcaption {
     display: inline-block;
     width: 100%;
@@ -1010,6 +1175,7 @@ figcaption {
     left: 0;
     font-size: 0;
 }
+
 .chart-java figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -1031,18 +1197,20 @@ figcaption {
         transform: translateY(-95rem);
     }
 }
+
 @-webkit-keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
-/* codepen styling only */
 
+/* codepen styling only */
 
 figure {
     margin: 1rem !important;
@@ -1061,22 +1229,26 @@ figcaption {
     margin: 0;
     position: relative;
 }
+
 .char-cshape.animate svg .circle-foreground {
     -webkit-animation: offset 3s ease-in-out forwards;
     animation: offset 3s ease-in-out forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .char-cshape.animate figcaption:after {
     -webkit-animation: char-cshape-label 3s steps(38) forwards;
     animation: char-cshape-label 3s steps(38) forwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .char-cshape svg {
     width: 100%;
     height: 100%;
 }
+
 .char-cshape svg .circle-background, .char-cshape svg .circle-foreground {
     r: 87.5px;
     cx: 50%;
@@ -1085,6 +1257,7 @@ figcaption {
     stroke: #efefef;
     stroke-width: 25px;
 }
+
 .char-cshape svg .circle-foreground {
     stroke: #ab00e8;
     stroke-dasharray: 208.81px 549.5px;
@@ -1095,6 +1268,7 @@ figcaption {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .char-cshape figcaption {
     display: inline-block;
     width: 100%;
@@ -1107,6 +1281,7 @@ figcaption {
     left: 0;
     font-size: 0;
 }
+
 .char-cshape figcaption:after {
     display: inline-block;
     content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
@@ -1128,18 +1303,20 @@ figcaption {
         transform: translateY(-95rem);
     }
 }
+
 @-webkit-keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes offset {
     100% {
         stroke-dashoffset: 0;
     }
 }
-/* codepen styling only */
 
+/* codepen styling only */
 
 figure {
     margin: 1rem !important;
@@ -1158,7 +1335,8 @@ figcaption {
     padding: 0 0 5% 0;
 
 }
-.skillchartinfo-header{
+
+.skillchartinfo-header {
     color: #252525;
     display: flex;
     justify-content: center;
@@ -1168,13 +1346,15 @@ figcaption {
     flex-direction: row;
     padding: 5% 5%;
 }
-.single-chart{
+
+.single-chart {
     display: flex;
     justify-content: center;
     align-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .single-chart h1 {
     text-align: center;
     font-size: 1.5em;
@@ -1184,12 +1364,14 @@ figcaption {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.headerskill{
+
+.headerskill {
     background-color: white;
     z-index: 2;
     color: #252525;
 }
-.logo-group{
+
+.logo-group {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -1200,10 +1382,75 @@ figcaption {
     padding: 0 10%;
 
 }
-.logo-group img{
+
+.logo-group img {
     width: 20%;
     height: 20%;
 }
-.experience-school{
+
+.experience-school {
     padding: 5% 5%;
+}
+
+.portfolio {
+    text-align: center;
+    font-size: 2.5em;
+    display: inline-block;
+    background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  padding: 3% 0%;
+    width: 100%;
+}
+.github-portfolio{
+    display:flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.github{
+    background-color: #ffffff;
+    border-radius: 3%;
+    font-size: 1em;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+}
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.content-card{
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.card-img{
+    border-right: solid 1px black;
+    padding: 10% 10%;
+
+}
+
+.infomation{
+    padding: 10% 10%;
+}
+.fork-star-github{
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.icon-gitnaja{
+    margin: 0% 5%;
 }

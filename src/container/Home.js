@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
-import Navbar from '../component/Navbar';
+
 import picture from '../assets/picture.png'
-import react from  '../assets/react.png'
-import html5 from '../assets/html5.png'
-import github from '../assets/github.png'
+import react from '../assets/react.png'
+
+import githubimg from '../assets/github.png'
 import laravel from '../assets/laravel.png'
 import nodejs from '../assets/nodejs.png'
 import stack from '../assets/stack.png'
-import css3 from '../assets/css3.png'
-import picturewithe from '../assets/piture-withe.png'
+import lady from '../assets/lady.jpg'
 import '../App.css';
 import '../assets/circle.scss'
 import Hardskill from '../component/Hardskill';
-
+import Card from '../component/Card';
+import {fetchgithub} from "../actions/index";
+import {connect} from 'react-redux';
+import shootingstar  from '../assets/shooting-star.svg';
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -29,6 +31,9 @@ class Home extends Component {
     }
 
     componentDidMount() {
+        this.props.fetchgithub();
+        this.shootingstars('left',this.cb),
+            this.shootingstars('right',this.cb)
         window.addEventListener('scroll', this.handleScroll);
         if (window.scrollY === 0) {
             this.setState({topelement: true})
@@ -40,10 +45,32 @@ class Home extends Component {
         if (scrollTop > 0) {
             this.setState({topelement: true})
         }
-        console.log(scrollTop);
     };
 
+    shootingstars = (dir, cb) => (
+        setInterval(() => {
+            var topPos = Math.floor(Math.random() * 80) + 1,
+                topPos = topPos + '%',
+                leftPos = Math.floor(Math.random() * 40) + 1,
+                leftPos = leftPos + '%',
+                trans = Math.floor(Math.random() * 300) + 1,
+                trans = trans + 'deg';
+            cb(dir, {
+                top: topPos,
+                [dir]: leftPos,
+                transform: 'rotate(' + trans + ')'
+            });
+        }, 1000)
+    )
+    cb =(dir,val)=>{
+        this.setState({[dir]:val})
+    }
+
+
     render() {
+        const {github} = this.props;
+        const {left,right} = this.state
+
         return (
 
             <div className={!this.state.mobile ? 'home' : 'home menu-is-active'}>
@@ -58,12 +85,14 @@ class Home extends Component {
 
                                 </figure>
 
-                                <div>
+                                <div className="infomation">
                                     <p className="animated fadeInUp">My name is Kittinut Pramhan</p>
                                     <p className="animated fadeInUp">I live in Phuket</p>
-                                    <p className="animated fadeInUp"> My Fev animal :cat, dog</p>
+                                    <p className="animated fadeInUp"> My Favorite animal :cat, dog</p>
+                                    <p className="animated fadeInUp"> My Favorite pet : she name is Lady
+                                        <br/> <img src={lady} style={{width: "20%", height: "20%"}} alt=""/>
+                                    </p>
                                     <p className="animated fadeInUp"> Hobbies :Play Guitar,Watch Movies</p><br/>
-
                                     <blockquote className="animated fadeIn">
                                         “The two most important days in your life are the day you are born and the day
                                         you find out why.”
@@ -74,6 +103,12 @@ class Home extends Component {
                         </div>
                         <div className="stars"></div>
                         <div className="star-lg"></div>
+                        <figure className="shooting-star">
+                        <img src={shootingstar}  alt ="shooting star" style={this.state.left}/>
+                    </figure>
+                    <figure className="shooting-star-right" style={this.state.right}>
+                        <img src={shootingstar} alt ="shooting star" />
+                    </figure>
                     </header>
                 </main>
                 <span className="screen" style={{display: !this.state.mobile ? 'none' : 'inline'}}></span>
@@ -92,14 +127,24 @@ class Home extends Component {
                     <div className="logo-group">
                         <img src={nodejs} alt="nodejs"/>
                         <img src={react} alt="react"/>
-                        <img src={github} alt="github"/>
+                        <img src={githubimg} alt="github"/>
                         <img src={laravel} alt="laravel"/>
                         <img src={stack} alt="stack"/>
                     </div>
                 </div>
-                <div className="experience-school">
 
+                <div className="headerportfolio  fadeIn">
+                    <h1 className="portfolio">Portfolio</h1>
+                    <hr/>
                 </div>
+                <div className="github-portfolio">
+                    {
+                        github.map(value => {
+                            return <Card key={value.id} name={value.name} fork={value.forks} star={value.watchers}/>
+                        })
+                    }
+                </div>
+
                 <div className="mobile-menu-trigger">
                     <div onClick={this.handleClickmenuMobil}>
                         <span></span>
@@ -113,4 +158,9 @@ class Home extends Component {
     }
 }
 
-export default Home
+const mapStateToProps = ({github}) => {
+    return {
+        github,
+    }
+}
+export default connect(mapStateToProps, {fetchgithub})(Home);
