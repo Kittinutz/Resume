@@ -140,7 +140,7 @@ class Home extends Component {
                 <div className="github-portfolio">
                     {
                         github.map(value => {
-                            return <Card key={value.id} name={value.name} fork={value.forks} star={value.watchers}/>
+                            return <Card key={value.id} url={value.html_url} name={value.name} fork={value.forks} star={value.watchers}/>
                         })
                     }
                 </div>
