@@ -6,7 +6,9 @@ import reduxThunk from 'redux-thunk'
 import reducers from './reducers';
 import Home from "./container/Home";
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+import {Route,Switch,HashRouter} from 'react-router-dom'
+
+import Form from './container/Client'
 // import App from './App';
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
@@ -15,6 +17,10 @@ const store = createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENS
 
 ReactDOM.render(
     <Provider store={store}>
-        <Home/>
+      <HashRouter>
+        <Switch>
+          <Route path="/" component={Home} />
+        </Switch>
+      </HashRouter>
     </Provider>, document.getElementById('root'));
 registerServiceWorker();
