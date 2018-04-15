@@ -94,7 +94,7 @@ class Home extends Component {
                                     </p>
                                     <p className="animated fadeInUp"> Hobbies :Play Guitar,Watch Movies</p><br/>
                                     <p>
-                                        Conteact: <br/>
+                                        Contact: <br/>
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/600px-LINE_logo.svg.png" style={{width:"5%"}} alt=""/>
                                         <br/> IDLiNE : knightza12345 <br/>
                                         Tel:+66836467520
