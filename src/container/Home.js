@@ -85,7 +85,7 @@ class Home extends Component {
 
                                 </figure>
 
-                                <div className="infomation">
+                                <div className="infomation ">
                                     <p className="animated fadeInUp">My name is Kittinut Pramhan</p>
                                     <p className="animated fadeInUp">I live in Phuket</p>
                                     <p className="animated fadeInUp"> My Favorite animal :cat, dog</p>
@@ -93,6 +93,13 @@ class Home extends Component {
                                         <br/> <img src={lady} style={{width: "20%", height: "20%"}} alt=""/>
                                     </p>
                                     <p className="animated fadeInUp"> Hobbies :Play Guitar,Watch Movies</p><br/>
+                                    <p>
+                                        Contact: <br/>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/600px-LINE_logo.svg.png" style={{width:"5%"}} alt=""/>
+                                        <br/> IDLiNE : knightza12345 <br/>
+                                        Tel:+66836467520
+                                    
+                                    </p>
                                     <blockquote className="animated fadeIn">
                                         “The two most important days in your life are the day you are born and the day
                                         you find out why.”
