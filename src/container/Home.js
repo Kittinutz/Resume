@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import picture from '../assets/picture.png'
 import react from '../assets/react.png'
-import '../index.css';
+
 import githubimg from '../assets/github.png'
 import laravel from '../assets/laravel.png'
 import nodejs from '../assets/nodejs.png'

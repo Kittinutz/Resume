@@ -7,7 +7,7 @@ import reducers from './reducers';
 import Home from "./container/Home";
 import registerServiceWorker from './registerServiceWorker';
 import {Route,Switch,HashRouter} from 'react-router-dom'
-
+import './index.css'
 import Form from './container/Client'
 // import App from './App';
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
